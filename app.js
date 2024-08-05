@@ -6,7 +6,7 @@ const path = require('path')
 const PORT = 3000
 app.use(body_parser.json())
 
-app.use(express.raw({ type: 'multipart/form-data', limit: '10mb' }));
+app.use(express.raw({ type: 'multipart/form-data'}));
 
 const filePath = path.join(__dirname, 'public/uploads')
 
